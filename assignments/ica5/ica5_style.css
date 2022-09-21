@@ -1,45 +1,72 @@
 * {
-    box-sizing: border-box;
-  }
-  html {
-    font-family: sans-serif;
-  }
-  body {
-    margin: 0;
-  }
-  article {
-    background-color: white;
-    background-image: 
-        line ar-gradient(
-            to top,
-            rgba(0,0,0,0.3), 
-            rgba(255,255,255,0),
-            rgba(255,255,255,0),
-            rgba(0,0,0,0.3)),
-            url(top-image.png), url(bottom-image.png);
-    background-position: bottom, top;
-    background-repeat: no-repeat, no-repeat;
-    width: 210mm;
-    height: 297mm;
-    margin: 20px auto;
-    position: relative;
-  }
-  address {
-    position: absolute;
-    bottom: 8mm;
-    right: 20mm;
-  }
-  h1 {
-    position: absolute;
-    top: 12mm;
-    left: 20mm;
-    width: 128px;
-    height: 128px;
-    font-size: 20px;
-    letter-spacing: 1px;
-    text-align: center;
-    padding: 44px 0;
-    color: white;
-    text-shadow: 1px 1px 1px black;
-  }
-  /* Your CSS below here */
+  box-sizing: border-box;
+}
+html {
+  font-family: sans-serif;
+}
+body {
+  margin: 0;
+}
+
+/*fallback for browsers who don't support background code*/
+article {
+  background-image: url(top-image.png);
+  background-position: top;
+}
+
+article {
+  /* sets up the two background images + background gradient */
+  background-color: white;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.3),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(top-image.png), url(bottom-image.png);
+  background-position: bottom, top;
+  background-repeat: no-repeat, no-repeat;
+
+  width: 210mm;
+  height: 297mm;
+  margin: 20px auto;
+  position: relative;
+
+  /* sets up the red borders */
+  border-bottom: solid 1mm red;
+  border-top: solid 1mm red;
+}
+
+address {
+  position: absolute;
+  bottom: 8mm;
+  right: 20mm;
+}
+
+h1 {
+  background-image: url(logo.png);
+
+  /*filter: drop-shadow(1mm 1mm 1mm black); !!old code*/
+
+  /*credit to corelangs.com's css circle shadow
+     and html-css-js.com's box shadow generator*/
+  width: 150px;
+  height: 150px;
+  border: solid 1px #555;
+  background-color: #eed;
+  box-shadow: 7px 13px 15px -3px rgba(0, 0, 0, 0.71);
+  border-radius: 100px;
+
+  position: absolute;
+  top: 12mm;
+  left: 20mm;
+  width: 128px;
+  height: 128px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 44px 0;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
