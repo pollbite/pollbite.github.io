@@ -1,0 +1,70 @@
+h1 {
+    /*color:#fac632; color for when website is fully formatted*/
+    color: #23006e;
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 800;
+}
+
+h2 {
+    color: #23006e;
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 600;
+}
+
+h3 {
+    color: #23006e;
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 500;
+}
+
+h4 {
+    color: #23006e;
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
+}
+
+h5 {
+    color: #23006e;
+    font-family: 'EB Garamond';
+    font-style: italic;
+    font-weight: 500;
+}
+
+h6 {
+    color: #23006e;
+    font-family: 'EB Garamond';
+    font-style: italic;
+    font-weight: 400;
+}
+
+p {
+    color: black;
+    font-family: 'Vareal Round';
+    font-style: normal;
+    font-weight: 400;
+}
+
+img {
+    border: 5px solid #23006e;
+}
+
+hr {
+    color:#b515c2;
+}
+
+a:link{
+    color: #1f68b8;
+}
+
+a:visited{
+    color: #b515c2;
+}
+
+a:hover{
+    text-decoration: underline;
+    color:#1f68b8;
+}
