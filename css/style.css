@@ -366,11 +366,15 @@ div.gallery li img {
   left: 65%;
 }
 
+/* media query for phones */
 @media (max-width: 800px) {
+
+    /* editing about page to remove line */
   .line {
     display: none;
   }
 
+  /* resizing header for phones */
   .flex-container {
     display: flex;
     flex-direction: row;
@@ -415,6 +419,7 @@ div.gallery li img {
     margin: 5px 5px 0px 5px;
   }
 
+  /* resizing galleries for phone */
   .gallery ul li {
     position: relative;
     float: left;
