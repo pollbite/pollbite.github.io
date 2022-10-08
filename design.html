@@ -4,28 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>design</title>
 </head>
 <body>
 
-    <h1>Lily Battin</h1>
+    <h1>lily battin</h1>
 
-    <h3 href="index.html">about</h3>
-    <h3 href="art.html">art</h3>
-    <h3 href="design.html">design</h3>
-    <h3 href="">web</h3>
-
-
-    <!--image grid inspired by https://codepen.io/rrenula/pen/nJmQed*/-->
-    <div class="wrapper">
-        <div class="gallery">
-            <ul>
-                <li><img src="./img/AbstractingApplesWeb.png" alt="Abstract Scary Apple"></li>
-                <li><img src="./img/TypeSpecimenPosterWeb.png" alt="Type Specimen Poster Garamond Premier Pro"></li>
-                <li><img src="./img/ExpressiveBookletThumbnailWeb.png" alt="Accordion Typography Book"></li>
-                <li><img src="./img/ElementsOfDesignThumbnailWeb.png" alt="Elements of Design"></li>
-                <li><img src="./img/KnowYourTypeDesignWeb.png" alt="Anatomy of Bookman Old Style"></li>
-            </ul>
+    <div class="flex-container">
+        <div id="unhighlight-about-box">
+          <h3><a class="header-link" href="index.html">about</a></h3>
         </div>
+        <div id="unhighlight-box">
+          <h3><a class="header-link" href="art.html">art</a></h3>
+        </div>
+        <div id="highlight-box">
+          <h3><a class="header-link" href="design.html">design</a></h3>
+        </div>
+        <div id="unhighlight-box">
+          <h3><a class="header-link" href="web.html">web</a></h3>
+        </div>
+      </div>
+
+    <div class="file">
+        <hr id="gallery-border">
+
+
+        <!-- this is a link which will be styled as a button using css, credit to https://stackoverflow.com/questions/2906582/how-do-i-create-an-html-button-that-acts-like-a-link for the idea -->
+        <a class="link-button" href="https://lilyswipblog.wordpress.com/">wip blog</a>
+
+
+        <!--image grid inspired by https://codepen.io/rrenula/pen/nJmQed*/-->
+            <div class="gallery-design">
+                <ul>
+                    <li>
+                        <figure>
+                            <img src="./img/AbstractingApplesWeb.png" alt="Abstract Scary Apple">
+                            <figcaption>Text class, abstracted apples assignment</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/TypeSpecimenPosterWeb.png" alt="Type Specimen Poster Garamond Premier Pro">
+                            <figcaption>Text class, type specimen poster assignment</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/ExpressiveBookletThumbnailWeb.png" alt="Accordion Typography Book">
+                            <figcaption>Text class, expressive booklet assignment</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/ElementsOfDesignThumbnailWeb.png" alt="Elements of Design">
+                            <figcaption>Text class, elements of design assignment</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/KnowYourTypeDesignWeb.png" alt="Anatomy of Bookman Old Style">
+                            <figcaption>Text class, know your type assignment</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+    </div>
 </body>
 </html>
