@@ -90,7 +90,6 @@ img {
 i {
   margin: 0px 10px 20px 10px;
   padding: 0.5%;
-  size: 20pt;
   color: #1f68b8;
 }
 
@@ -179,11 +178,6 @@ a.link-button:hover {
   background-color: #23006e;
 }
 
-a.link-button:visted {
-  background-color: #1f68b8;
-  color: #fac632;
-}
-
 /* formatting for the header tabs */
 .flex-container {
   display: flex;
@@ -193,7 +187,7 @@ a.link-button:visted {
   text-align: center;
 }
 /* the appearance of the about header tab when selected */
-#highlight-about-box {
+.highlight-about-box {
   background-color: white;
   border-radius: 15px;
   border-bottom-left-radius: 0px;
@@ -203,7 +197,7 @@ a.link-button:visted {
   margin: 10px 10px -1px 20px;
 }
 /* the appearance of the general header tab when selected */
-#highlight-box {
+.highlight-box {
   background-color: white;
   border-radius: 15px;
   border-bottom-left-radius: 0px;
@@ -213,7 +207,7 @@ a.link-button:visted {
   margin: 10px 10px -1px 10px;
 }
 /* the appearance of the about header tab when not selected */
-#unhighlight-about-box {
+.unhighlight-about-box {
   background-color: #1f68b8;
   color: #fac632;
   border: #23006e solid 2px;
@@ -226,7 +220,7 @@ a.link-button:visted {
   margin: 10px 10px 0px 20px;
 }
 /* the appearance of the general header tab when not selected */
-#unhighlight-box {
+.unhighlight-box {
   background-color: #1f68b8;
   color: #fac632;
   border: #23006e solid 2px;
