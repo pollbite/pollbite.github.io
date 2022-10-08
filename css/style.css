@@ -19,7 +19,7 @@ body {
     padding: 40px;
     border: white;
     border-radius:15px;
-    overflow: hidden;
+    overflow:hidden;
 }
 
 h1 {
@@ -171,6 +171,15 @@ a.link-button {
 
 }
 
+a.link-button:hover {
+    background-color: #23006e;
+}
+
+a.link-button:visted {
+    background-color:#1f68b8;
+    color: #fac632;
+}
+
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -225,15 +234,37 @@ a.link-button {
   margin: 10px 10px 0px 10px;
 }
 
-figcaption {
-    display:flex;
-    width: 100%;
-    position: relative;
-    top: 300px;
+
+
+
+.figure-container {
     font-family: "Poppins";
     font-style: italic;
     font-weight: 400;
+    font-size: 10pt;
+    margin: 0 auto;
+    text-align: center;
 }
+
+.figure-container .figure-caption {
+    position:absolute;
+    top:275px;
+    left:45px;
+    bottom:0;
+    color:#23006e;
+    width: 320px;
+    height: 20%;
+    padding: 20px;
+}
+
+#web-container {
+    font-size: 5pt;
+}
+
+#web-caption {
+    top:225px;
+}
+
 
 /* code inspired by https://codepen.io/rrenula/pen/nJmQed for gallery */ 
 
@@ -276,7 +307,6 @@ figcaption {
 	height: 130px;
 	margin: 150px;
 	padding: 30px;
-	z-index: 0;
 }
 
 /* Make sure z-index is higher on hover */
@@ -298,28 +328,44 @@ figcaption {
     border-radius: 15px;
 }
 
+.figure-caption{
+    display:none;
+}
+
 .gallery-design ul li img {
 	position: absolute;
 	left: -5px;
 	top: -45px;
 	padding: 10px;
 	width: 325%;
-	height: 300%;
+	height: 260%;
 	background: #1f68b8;
     object-fit: cover;
     border-radius: 15px;
 }
 
+.gallery-design#web ul li img {
+    left: -35%;
+    top:-100px;
+    width: 400%;
+    margin: 0 auto;
+}
+
 .gallery ul li img:hover {
 	width: 400%;
 	height: 400%;
-	margin-top: -130px;
+	margin-top: -200px;
 	margin-left: -130px;
 	top: 65%;
 	left: 65%;
 }
 
 @media (max-width: 800px) {
+
+    .line {
+        display:none;
+    }
+
     .flex-container {
         display: flex;
         flex-direction: row;
@@ -392,5 +438,37 @@ figcaption {
         margin-left: -130px;
         top: 65%;
         left: 65%;
-  
+    }
+
+    .gallery-design ul li {
+        position: relative;
+        float: left;
+        width: 130px;
+        height: 130px;
+        margin: 40px;
+        padding: 10px;
+    }
+
+    .gallery-design ul li img {
+        position: absolute;
+        left: -25px;
+        top: 65px;
+        padding: 10px;
+        width: 350px;
+        height: 200px;
+        background: #1f68b8;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+
+    a.link-button {
+        left: 40%;
+    }
+
+    .gallery-design#web ul li img {
+        left: -25%;
+        top:-10px;
+        width: 300%;
+        margin: 0 auto;
+    }
 }
