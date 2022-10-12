@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <script defer src="../../js/ica8.js"></script>
+    <title>ica8</title>
+  </head>
+  <body>
+    <!--image that changes to black and white with click-->
+    <img
+      id="onClickImage"
+      src="../../img/WebAboutMePFP.png"
+      alt="profileImageOfMe"
+      onclick="changeImage()"
+    />
+
+    <!--input box that changes color with key input, credit to w3schools for the idea-->
+    <input
+      type="text"
+      id="inputColorChanger"
+      onkeydown="keyPress()"
+      onkeyup="keyRelease()"
+    />
+  </body>
+</html>
