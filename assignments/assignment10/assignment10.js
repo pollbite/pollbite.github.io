@@ -1,47 +1,46 @@
-
-// create a json for each employee 
+// create a json for each employee
 // created a new template literal object and then parse it into JSON
 var sam = {
-    name : "Sam",
-    department : "Tech",
-    designation : "Manager", 
-    salary : 40000, 
-    raiseEligible : true
+  name: "Sam",
+  department: "Tech",
+  designation: "Manager",
+  salary: 40000,
+  raiseEligible: true,
 };
 
 console.log(sam.salary);
 
 var mary = {
-    name : "Mary",
-    department : "Finance",
-    designation : "Trainee", 
-    salary : 18500, 
-    raiseEligible : true
+  name: "Mary",
+  department: "Finance",
+  designation: "Trainee",
+  salary: 18500,
+  raiseEligible: true,
 };
 
 var bill = {
-    name : "Bill",
-    department : "HR",
-    designation : "Executive", 
-    salary : 21200, 
-    raiseEligible : false
+  name: "Bill",
+  department: "HR",
+  designation: "Executive",
+  salary: 21200,
+  raiseEligible: false,
 };
 
-// creating a new obj. for anna 
+// creating a new obj. for anna
 var anna = {
-    name: "Anna",
-    department: "Tech",
-    designation: "Executive",
-    salary: 25600,
-    raiseEligible: false
-}
+  name: "Anna",
+  department: "Tech",
+  designation: "Executive",
+  salary: 25600,
+  raiseEligible: false,
+};
 
-
-// 2. created a new JSON obj. for the company 
+// 2. created a new JSON obj. for the company
 var company = {
-    companyName : "Tech Stars",
-    website : "www.techstars.site",
-    employees : [sam, mary, bill]
+  companyName: "Tech Stars",
+  website: "www.techstars.site",
+  employees: [sam, mary, bill],
+  wfh: [anna, sam],
 };
 
 console.log(company.employees);
@@ -53,23 +52,35 @@ console.log(company.employees);
 
 // calculating the total salary for all company employees
 var salaryTotal = 0;
-for (var i =0; i < company.employees.length; i++){
-    var employeeAccess = company.employees[i];
-    var salary = employeeAccess.salary;
-    salaryTotal += salary;
+for (var i = 0; i < company.employees.length; i++) {
+  var employeeAccess = company.employees[i];
+  var salary = employeeAccess.salary;
+  salaryTotal += salary;
 }
 
 console.log(salaryTotal);
 
-// giving all eligible employees a raise 
-for (var i=0; i < company.employees.length; i++){
-    var employeeAccess = company.employees[i];
-    if (employeeAccess.raiseEligible === true){
-        employeeAccess.salary *= 1.1;
-    }
+// giving all eligible employees a raise
+for (var i = 0; i < company.employees.length; i++) {
+  var employeeAccess = company.employees[i];
+  if (employeeAccess.raiseEligible === true) {
+    employeeAccess.salary *= 1.1;
+  }
 }
 
 console.log(sam.salary);
-console.log (anna.salary);
+console.log(anna.salary);
 
 // updating the company JSON to include wfh
+for (var i = 0; i < company.employees.length; i++) {
+  var employeeAccess = company.employees[i];
+  if (employeeAccess === anna || employeeAccess === sam) {
+    employeeAccess["wfh"] = true;
+  } else {
+    employeeAccess["wfh"] = false;
+  }
+}
+
+console.log(sam.wfh);
+console.log(bill.wfh);
+console.log(sam);
