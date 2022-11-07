@@ -1,6 +1,65 @@
 
+// function returns a random number between 1 and 649
+function getRandomPokemonNumber() {
+    return Math.floor(Math.random() * (649 - 1) + 1);
+}
 
-const pokemonArray = [];
+console.log(getRandomPokemonNumber());
+
+function getRandomPokemon(number) {
+    fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
+    .then(response => response.json())
+    .then(function(data){
+        var name = data.name; 
+        var sprite = data.versions.generation_v.black_and_white.animated.front_default;
+        renderPokemon(name, sprite);
+    });
+    
+}
+
+function renderPokemon(name, sprite){
+    document.getElementById('js-pokemon-name').textContent = name; 
+    document.getElementById('js-pokemon-image').src = sprite;
+}
+
+getRandomPokemon(25);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// old pokemon code 
+/*
+ const pokemonArray = [];
 
 // credit to https://medium.com/@sergio13prez/fetching-them-all-poke-api-62ca580981a2 for information on how to use pokemon api
 
@@ -44,7 +103,8 @@ fetchPokemon();
 console.log(pokemonArray);
 
 const randomPokemon = randomPokemonSelector(pokemonArray);
-console.log(randomPokemon);
+console.log(randomPokemon); 
+*/
 
 
 
