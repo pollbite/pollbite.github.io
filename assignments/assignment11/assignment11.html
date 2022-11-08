@@ -4,26 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assignment11.css">
     <title>Quote and Image Random Generator</title>
 </head>
 <body>
-    <header>Random Pokemon Generator</header>
-    <section class="information">
-        <div class="pokemon-text" id="js-pokemon-name">
-            default pokemon filler
+    <header><h1>Random Pokemon Generator</h1></header>
+    <div class="surround-box">
+        <div class="outside-box">
+            <section class="information">
+                <div class="pokemon-text" id="js-pokemon-name">
+                    default pokemon filler
+                </div>
+                <img 
+                    class="pokemon-image" 
+                    id="js-pokemon-image" 
+                    src="" 
+                    alt="pokemon sprite">
+                </img>
+            </section>
+            <section class="controls">
+                <button type="button" id="js-new-pokemon" class="new-pokemon button">
+                    Generate a new pokemon
+                </button>
+            </section>
         </div>
-        <img 
-            class="pokemon-image" 
-            id="js-pokemon-image" 
-            src="../../img/scientific_whip_scorpion.png" 
-            alt="pokemon sprite">
-        </img>
-    </section>
-    <section class="controls">
-        <button type="button" id="js-new-pokemon" class="new-pokemon button">
-            Generate a new pokemon
-        </button>
-    </section>
+    </div>
     
 </body>
 <script src="assignment11.js"></script>

@@ -1,19 +1,17 @@
 
-const pokemonButton = document.querySelector('.new-pokemon');
+const pokemonButton = document.querySelector('new-pokemon');
 
-const callPokemon = getRandomPokemon(getRandomPokemonNumber());
+const callPokemon = getRandomPokemon();
 
-pokemonButton.addEventListener('click', callPokemon);
+pokemonButton.addEventListener('click', getRandomPokemon());
 
-// function returns a random number between 1 and 649
-function getRandomPokemonNumber() {
-    return Math.floor(Math.random() * (649 - 1) + 1);
-}
+Window.onload = getRandomPokemon();
 
-console.log(getRandomPokemonNumber());
+//console.log(getRandomPokemonNumber());
 
 // function gets a random pokemon and calls the renderPokemon function to render it
-function getRandomPokemon(number) {
+function getRandomPokemon() {
+    var number = getRandomPokemonNumber();
     fetch(`https://pokeapi.co/api/v2/pokemon/${number}`)
     .then(response => response.json())
     .then(function(data){
@@ -28,10 +26,16 @@ function getRandomPokemon(number) {
     
 }
 
+// function returns a random number between 1 and 649
+function getRandomPokemonNumber() {
+    return Math.floor(Math.random() * (905 - 1) + 1);
+}
+
 function renderPokemon(name, sprite){
     document.getElementById('js-pokemon-name').textContent = name; 
     document.getElementById('js-pokemon-image').src = sprite;
 }
+
 
 //getRandomPokemon(getRandomPokemonNumber());
 

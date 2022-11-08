@@ -1,0 +1,25 @@
+
+.surround-box {
+    position: fixed;
+    top:40%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width: 40%;
+    height: 60%;
+    background-color: beige;
+}
+.outside-box{
+    padding: 10% 10% 10% 10%;
+
+}
+
+/*.outside-box {
+    width: 50%; 
+    height: 50%; 
+    background-color: brown;
+}*/
+
+h1 {
+    text-align:center;
+    
+}
