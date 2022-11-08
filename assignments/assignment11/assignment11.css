@@ -1,58 +1,56 @@
-
 /* import of Roboto and Press Start 2P*/
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 body {
-    background-color: #011936;
+  background-color: #011936;
 }
 
 .surround-box {
-    position: fixed;
-    top:41%;
-    left:50%;
-    transform:translate(-50%, -50%);
-    width: 40%;
-    height: 60%;
-    background-color: #82A3A1;
-    border-radius: 25px;
+  position: fixed;
+  top: 41%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 60%;
+  background-color: #82a3a1;
+  border-radius: 25px;
 }
-.outside-box{
-    padding: 10%;
-    margin:5%;
+.outside-box {
+  padding: 10%;
+  margin: 5%;
 }
 
 h1 {
-    text-align:center;
-    font-family: "Press Start 2P";
-    font-style: normal;
-    font-size: 200%;
-    margin: 40px 0px 0px 0px; 
-    color:#C0DFA1;
+  text-align: center;
+  font-family: "Press Start 2P";
+  font-style: normal;
+  font-size: 200%;
+  margin: 40px 0px 0px 0px;
+  color: #c0dfa1;
 }
 
 .pokemon-text {
-    text-align:center;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 900;
-    font-size: 225%;
-    color:#011936;
-    margin: -9%;
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 225%;
+  color: #011936;
+  margin: -9%;
 }
 
 .pokemon-image {
-    position:fixed;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width:300px;
-    object-fit:contain;
-
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  object-fit: contain;
 }
 
-button{
-    position:fixed;
-    top:90%;
-    left:50%;
-    transform: translate(-50%, -50%);
+button {
+  position: fixed;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

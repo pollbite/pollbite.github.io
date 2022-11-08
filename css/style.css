@@ -94,14 +94,14 @@ i {
 }
 
 .icon-row {
-    display: flex;
-    flex-direction: row;
-    margin: 0px;
-  }
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+}
 
-  #house {
-    margin-left: 30px;
-  }
+#house {
+  margin-left: 30px;
+}
 
 hr {
   color: #b515c2;
@@ -362,8 +362,7 @@ div.gallery li img {
 
 /* media query for phones */
 @media (max-width: 800px) {
-
-    /* editing about page to remove line */
+  /* editing about page to remove line */
   .line {
     display: none;
   }
