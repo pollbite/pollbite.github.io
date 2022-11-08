@@ -53,4 +53,14 @@ button {
   top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding:3%;
+  font-family: "Roboto";
+  font-style:normal;
+  font-weight: 500;
+  font-size:15pt;
+  background-color: #c0dfa1;
+  border-radius:25px;
+  border:none;
+  color:#011936;
+
 }
