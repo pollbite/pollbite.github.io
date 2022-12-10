@@ -1,7 +1,6 @@
 // color button
-let btnColor = document.querySelector('#btnColor');
-
-const colorButton = document.querySelector(".btnColor").addEventListener("click", colorChanger); 
+let btnColor = document.getElementById('btnColor');
+btnColor.addEventListener('click', colorChanger());
 
 // these are the elements with the color white
 let webFile = document.getElementsByClassName('file');
@@ -34,7 +33,7 @@ let webH1 = document.querySelector('h1');
 
 
 getRandomColor(){
-    let characters = "0123456789ABCDEF"
+    let characters = "0123456789ABCDEF";
     let color = "#";
 
     for (let i=0; i<6; i++) {
@@ -92,3 +91,4 @@ function colorChanger{
     colorChangePurple(getRandomColor());
     colorChangeLightest(getRandomColor());
 }
+
