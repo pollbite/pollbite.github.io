@@ -6,94 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <title>art page</title>
+    <script src="./js/script.js"></script>
   </head>
   <body>
     <h1>lily battin</h1>
 
     <div class="flex-container">
-      <div class="unhighlight-about-box">
-        <h3><a class="header-link" href="index.html">about</a></h3>
-      </div>
-      <div class="highlight-box">
-        <h3><a class="header-link" href="art.html">art</a></h3>
-      </div>
-      <div class="unhighlight-box">
-        <h3><a class="header-link" href="design.html">design</a></h3>
-      </div>
-      <div class="unhighlight-box">
-        <h3><a class="header-link" href="web.html">web</a></h3>
-      </div>
+      <a class="unhighlight-about-box" href="index.html">
+        <span>
+          <h3 class="unhighlight-box-header">about</h3>
+        </span>
+      </a>
+      <a class="highlight-box" href="art.html">
+        <span>
+          <h3 class="highlight-box-header">art</h3>
+        </span>
+      </a>
+      <a class="unhighlight-box" href="design.html">
+        <span>
+          <h3 class="unhighlight-box-header">design</h3>
+        </span>
+      </a>
+      <a class="unhighlight-box" href="web.html">
+        <span>
+          <h3 class="unhighlight-box-header">web</h3>
+        </span>
+      </a>
     </div>
 
     <div class="file">
-      <hr id="gallery-border"/>
-      <!--image grid inspired by https://codepen.io/rrenula/pen/nJmQed*/-->
-      <div class="gallery">
-        <ul>
-          <li>
-            <img
-              src="./img/mermay_hong.png"
-              alt="a mermaid in water"
-              class="fitted-image"
-            />
-          </li>
-          <li>
-            <img
-              src="./img/hong_and_kaixus_playing_chess.png"
-              alt="two characters playing chess"
-              class="fitted-image"
-            />
-          </li>
-          <li>
-            <img
-              src="./img/hh_band_poster_bottom_text_edit_draft.png"
-              alt="hurricane hill band poster"
-              class="fitted-image"
-            />
-          </li>
-          <li>
-            <img
-              src="./img/cuckoo_reference_light.png"
-              alt="dragon design"
-              class="fitted-image"
-            />
-          </li>
-          <li>
-            <img
-              src="./img/goldfish_head.png"
-              alt="man with goldfish head"
-              class="fitted-image"
-            />
-          </li>
-          <li>
-            <img
-              src="./img/ziggy_sketch.png"
-              alt="caterpillar girl sitting"
-              class="fitted-image"
-            />
-          </li>
-          <li>
-            <img
-              src="./img/cat_design.png"
-              alt="samurai cat"
-              class="fitted-image"
-            />
-          </li>
-          <li>
-            <img
-              src="./img/dog_design.png"
-              alt="knight dog"
-              class="fitted-image"
-            />
-          </li>
-          <li>
-            <img
-              src="./img/lizard_design.png"
-              alt="wizard lizard"
-              class="fitted-image"
-            />
-          </li>
-        </ul>
+    
+      <div class="gallery" id="gallery">
+        <div class="gallery-item">
+            <img src="./img/mermay_hong.png" alt="mermaid drawn for mermay">
+        </div>
+        <div class="gallery-item">
+            <img src="./img/hong_and_kaixus_playing_chess.png" alt="characters playing chess together">
+        </div>
+        <div class="gallery-item">
+          <img src="./img/hh_band_poster_bottom_text_edit_draft.png" alt="poster of bears for hurricane hill">
+        </div>
+        <div class="gallery-item">
+          <img src="./img/cuckoo_reference_light.png" alt="design of hivewing dragon from wings of fire">
+        </div>
+        <div class="gallery-item">
+          <img src="./img/goldfish_head.png" alt="business man with goldfish head">
+        </div>
+        <div class="gallery-item">
+          <img src="./img/ziggy_sketch.png" alt="alien character sitting in sunlight">
+        </div>
+        <div class="gallery-item">
+          <img src="./img/daiyu_adepti_form_reference.png" alt="beautiful kirin monster">
+        </div>
+        <div class="gallery-item">
+          <img src="./img/mlp_qilin_oc.png" alt="mlp qilin design">
+        </div>
+        <div class="gallery-item">
+          <img src="./img/hong_xiuquan.png" alt="reference of dnd druid circle of stars">
+        </div>
+        <div class="gallery-item">
+          <img src="./img/kaye_comm.png" alt="commission of dnd character">
+        </div>
+        <div class="gallery-item">
+          <img src="./img/mami_shooting.jpeg" alt="fanart of mami from madoka magica">
+        </div>
+        <div class="gallery-item">
+          <img src="./img/anth_full_shift.png" alt="alien creature design">
+        </div>
+
       </div>
     </div>
   </body>

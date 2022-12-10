@@ -5,96 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="./js/script.js"></script>
     <title>design</title>
   </head>
   <body>
     <h1>lily battin</h1>
 
     <div class="flex-container">
-      <div class="unhighlight-about-box">
-        <h3><a class="header-link" href="index.html">about</a></h3>
-      </div>
-      <div class="unhighlight-box">
-        <h3><a class="header-link" href="art.html">art</a></h3>
-      </div>
-      <div class="highlight-box">
-        <h3><a class="header-link" href="design.html">design</a></h3>
-      </div>
-      <div class="unhighlight-box">
-        <h3><a class="header-link" href="web.html">web</a></h3>
-      </div>
+      <a class="unhighlight-about-box" href="index.html">
+        <span>
+          <h3 class="unhighlight-box-header">about</h3>
+        </span>
+      </a>
+      <a class="unhighlight-box" href="art.html">
+        <span>
+          <h3 class="unhighlight-box-header">art</h3>
+        </span>
+      </a>
+      <a class="highlight-box" href="design.html">
+        <span>
+          <h3 class="highlight-box-header">design</h3>
+        </span>
+      </a>
+      <a class="unhighlight-box" href="web.html">
+        <span>
+          <h3 class="unhighlight-box-header">web</h3>
+        </span>
+      </a>
     </div>
 
     <div class="file">
-      <hr id="gallery-border" />
 
-      <!-- this is a link which will be styled as a button using css, credit to https://stackoverflow.com/questions/2906582/how-do-i-create-an-html-button-that-acts-like-a-link for the idea -->
+
+      <div class="gallery" id="gallery">
+        
+      <!-- due to time constraints I'm going to leave this out for now, and restyle when i have the chance-->
+      <!---this is a link which will be styled as a button using css, credit to https://stackoverflow.com/questions/2906582/how-do-i-create-an-html-button-that-acts-like-a-link for the idea
       <a class="link-button" href="https://lilyswipblog.wordpress.com/"
-        >wip blog</a
-      >
-
-      <!-- i can't figure out how to add the captions in this one, have an overflow issue :(-->
-      <!--image grid inspired by https://codepen.io/rrenula/pen/nJmQed*/
-            caption method inspired by https://www.youtube.com/watch?v=2GmLdOxBGso&ab_channel=CrypticLanguages -->
-      <div class="gallery-design">
-        <ul>
-          <li>
-            <div class="figure-container">
-              <img
-                src="./img/AbstractingApplesWeb.png"
-                alt="Abstract Scary Apple"
-              />
-              <div class="figure-caption">
-                <p>Text class, abstracted apples assignment</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="figure-container">
-              <img
-                src="./img/TypeSpecimenPosterWeb.png"
-                alt="Type Specimen Poster Garamond Premier Pro"
-              />
-              <div class="figure-caption">
-                <p>Text class, type specimen poster assignment</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="figure-container">
-              <img
-                src="./img/ExpressiveBookletThumbnailWeb.png"
-                alt="Accordion Typography Book"
-              />
-              <div class="figure-caption">
-                <p>Text class, expressive booklet assignment</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="figure-container">
-              <img
-                src="./img/ElementsOfDesignThumbnailWeb.png"
-                alt="Elements of Design"
-              />
-              <div class="figure-caption">
-                <p>Text class, elements of design assignment</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="figure-container">
-              <img
-                src="./img/KnowYourTypeDesignWeb.png"
-                alt="Anatomy of Bookman Old Style"
-              />
-              <div class="figure-caption">
-                <p>Text class, know your type assignment</p>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
+        >wip blog</a--->
+        <div class="gallery-item">
+            <img src="./img/AbstractingApplesWeb.png" alt="abstract apple design">
+        </div>
+        <div class="gallery-item">
+            <img src="./img/TypeSpecimenPosterWeb.png" alt="garamond premier type specimin poster">
+        </div>
+        <div class="gallery-item">
+          <img src="./img/ExpressiveBookletThumbnailWeb.png" alt="expressive type accordion booklet">
+        </div>
+        <div class="gallery-item">
+          <img src="./img/ElementsOfDesignThumbnailWeb.png" alt="abstract black and white elements of design">
+        </div>
+        <div class="gallery-item">
+          <img src="./img/KnowYourTypeDesignWeb.png" alt="font analysis of bookman old style">
+        </div>
+      
     </div>
   </body>
 </html>

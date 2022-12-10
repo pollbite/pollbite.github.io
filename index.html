@@ -8,29 +8,39 @@
       src="https://kit.fontawesome.com/8fab84841d.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/script.js"></script>
     <link rel="stylesheet" href="css/style.css" />
     <title>home</title>
   </head>
   <body>
     <h1>lily battin</h1>
+    <input class="btnColor" type="button" name="btnColor" value="change color"/>
 
     <div class="flex-container">
-      <div class="highlight-about-box">
-        <h3><a class="header-link" href="index.html">about</a></h3>
-      </div>
-      <div class="unhighlight-box">
-        <h3><a class="header-link" href="art.html">art</a></h3>
-      </div>
-      <div class="unhighlight-box">
-        <h3><a class="header-link" href="design.html">design</a></h3>
-      </div>
-      <div class="unhighlight-box">
-        <h3><a class="header-link" href="web.html">web</a></h3>
-      </div>
+      <a class="highlight-about-box" href="index.html">
+        <span>
+          <h3>about</h3>
+        </span>
+      </a>
+      <a class="unhighlight-box" href="art.html">
+        <span>
+          <h3 class="unhighlight-box-header">art</h3>
+        </span>
+      </a>
+      <a class="unhighlight-box" href="design.html">
+        <span>
+          <h3 class="unhighlight-box-header">design</h3>
+        </span>
+      </a>
+      <a class="unhighlight-box" href="web.html">
+        <span>
+          <h3 class="unhighlight-box-header">web</h3>
+        </span>
+      </a>
     </div>
 
     <div class="file">
-      <img src="./img/WebAboutMePFP.png" alt="Drawn Image of Me" />
+      <img id="about-me-image" src="./img/WebAboutMePFP.png" alt="Drawn Image of Me" />
 
       <div class="about-me-line">
         <div class="about-me-text">

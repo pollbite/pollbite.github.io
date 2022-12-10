@@ -5,43 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="./js/script.js"></script>
     <title>Web</title>
   </head>
   <body>
     <h1>lily battin</h1>
 
     <div class="flex-container">
-      <div class="unhighlight-about-box">
-        <h3><a class="header-link" href="index.html">about</a></h3>
-      </div>
-      <div class="unhighlight-box">
-        <h3><a class="header-link" href="art.html">art</a></h3>
-      </div>
-      <div class="unhighlight-box">
-        <h3><a class="header-link" href="design.html">design</a></h3>
-      </div>
-      <div class="highlight-box">
-        <h3><a class="header-link" href="web.html">web</a></h3>
-      </div>
+      <a class="unhighlight-about-box" href="index.html">
+        <span>
+          <h3 class="unhighlight-box-header">about</h3>
+        </span>
+      </a>
+      <a class="unhighlight-box" href="art.html">
+        <span>
+          <h3 class="unhighlight-box-header">art</h3>
+        </span>
+      </a>
+      <a class="unhighlight-box" href="design.html">
+        <span>
+          <h3 class="unhighlight-box-header">design</h3>
+        </span>
+      </a>
+      <a class="highlight-box" href="web.html">
+        <span>
+          <h3 class="highlight-box-header">web</h3>
+        </span>
+      </a>
     </div>
 
     <div class="file">
-      <hr id="gallery-border" />
-      <!--image grid inspired by https://codepen.io/rrenula/pen/nJmQed*/-->
-      <div class="gallery-design" id="web">
-        <ul>
-          <li>
-            <div class="figure-container" id="web-container">
-              <img
-                src="./img/PortfolioWebsiteScreenshot.png"
-                alt="screenshot of portfolio website"
-              />
-              <div class="figure-caption" id="web-caption">
-                <p>Web class, midterm assignment</p>
-              </div>
-            </div>
-          </li>
-        </ul>
+      <div class="gallery" id="gallery">
+        <div class="gallery-item" href="index.html">
+            <img src="./img/PortfolioWebsiteScreenshot.png" alt="screenshot of my portfolio website">
+        </div>
       </div>
     </div>
   </body>
