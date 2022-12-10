@@ -281,3 +281,38 @@ a.link-button:hover {
   content: "";
   flex-grow: 999;
 }
+
+.comm-flex {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  font-size: 30pt;
+  text-align: left;
+}
+
+.commission-column{
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;
+}
+
+.comm-image {
+  width: 100%; 
+  height: 100%; 
+  object-fit:cover;
+  border-radius: 5px; 
+  height: 100%; 
+  object-fit: cover;
+  margin: 5px;
+}
+
+.comm-header {
+  font-size: 100%;
+  display: flex;
+  vertical-align: middle;
+}
+
+.comm-list{
+  font-size: 50%;
+}
+
