@@ -344,16 +344,18 @@ a.highlight-box:hover{
 }
 
 .game{
-  width: 600px;
-  height: 200px; 
-  border: 1px solid black; 
+  width: 605px;
+  height: 205px; 
+  border: 5px solid #1f68b8; 
   margin: auto; 
+  border-radius: 10px;
+  background-image: url("forest.png");
 }
 
-#dino {
+#butterfree {
   width: 50px; 
   height: 50px; 
-  background-image: url("trex.png");
+  background-image: url("butterfree.gif");
   background-size: 50px 50px;
   position: relative; 
   top: 150px; 
@@ -385,20 +387,20 @@ a.highlight-box:hover{
   }
 }
 
-#cactus {
+#tree {
   width: 20px;
   height: 40px;
   position: relative;
   top: 110px;
   left: 580px;
 
-  background-image: url("cactus.png");
+  background-image: url("tree.png");
   background-size: 20px 40px;
 
  
 }
 
-.cactus-jump{
+.tree-jump{
   animation: block 1s infinite linear;
 }
 

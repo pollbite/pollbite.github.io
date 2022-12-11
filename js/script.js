@@ -3,36 +3,36 @@ const dino = document.getElementById("dino");
 const cactus = document.getElementById("cactus");
 
 function jump() {
-  if (dino.classList != "jump") {
-    dino.classList.add("jump");
+  if (butterfree.classList != "jump") {
+    butterfree.classList.add("jump");
 
     setTimeout(function () {
-      dino.classList.remove("jump");
+      butterfree.classList.remove("jump");
     }, 300);
   }
 }
 
-function cactusJump() {
-  if (cactus.classList != "cactus-jump") {
-    cactus.classList.add("cactus-jump")
+function treeJump() {
+  if (tree.classList != "tree-jump") {
+    tree.classList.add("tree-jump")
   }
 }
 
 
   let isAlive = setInterval(function () {
     // get current dino Y position
-    let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
+    let butterfreeTop = parseInt(window.getComputedStyle(butterfree).getPropertyValue("top"));
   
     // get current cactus X position
-    let cactusLeft = parseInt(
-      window.getComputedStyle(cactus).getPropertyValue("left")
+    let treeLeft = parseInt(
+      window.getComputedStyle(tree).getPropertyValue("left")
     );
   
     // detect collision
-    if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
+    if (treeLeft < 50 && treeLeft > 0 && butterfreeTop >= 140) {
       // collision
       alert("Game Over!");
-      cactus.classList.remove("cactus-jump");
+      tree.classList.remove("tree-jump");
     }
   }, 10);
 
@@ -43,7 +43,7 @@ document.addEventListener("keydown", function (event) {
   jump();
 });
 
-document.addEventListener("click", cactusJump);
+document.addEventListener("click", treeJump);
 
 
 
