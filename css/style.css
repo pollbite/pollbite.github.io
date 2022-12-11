@@ -95,11 +95,27 @@ i {
 .icon-row {
   display: flex;
   flex-direction: row;
-  margin: 0px;
+  margin: -10px 0px 0px 0px;
 }
 
 #house {
-  margin-left: 30px;
+  margin: -5px 10px 0px 0px;
+}
+
+.icon-link{
+  all:none;
+}
+
+.icon-link:hover #house{
+  color:#23006e;
+}
+
+.icon-link:hover #insta{
+  color:#23006e;
+}
+
+.icon-link:hover #twitter{
+  color:#23006e;
 }
 
 hr {
