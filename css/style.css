@@ -317,24 +317,23 @@ a.link-button:hover {
   font-size: 50%;
 }
 
-html{
-  cursor:none;
+.cursor-image {
+  position: absolute; 
+  width: 70px; 
+  height: 70px;
 }
 
 .cursor {
-  position: absolute; 
-  width: 25px; 
-  height: 25px; 
-  top: 50%; 
-  left: 50%; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
   margin: -24px 0 0 -24px;
-  border: 3px solid #23006e; 
-  border-radius: 100px; 
-  backface-visibility: hidden; 
-  transition: transform 0.3s ease-out; 
+  border: 3px solid #23006e;
+  border-radius: 100px;
+  transition: transform 0.3s ease-out;
 
   &.is-moving {
-    transform: scale(0,7);
+    transform: scale(0.7);
   }
 }
 
