@@ -1,6 +1,11 @@
 // color button
-let btnColor = document.getElementById('btnColor');
-btnColor.addEventListener('click', colorChanger());
+document
+  .querySelector(".no-button")
+  .addEventListener("click", console.log(tester));
+
+  function tester() {
+    return console.log("I'm listening");
+  }
 
 // these are the elements with the color white
 let webFile = document.getElementsByClassName('file');
@@ -21,18 +26,18 @@ let webHeaderLink = document.getElementsByClassName('header-link');
 let webIcon = document.querySelector('i');
 let webLink = document.querySelector('a');
 let unhighlightAboutBox = document.getElementsByClassName('unhighlight-about-box');
-let unhighlightBox = document.getElementByClassName('unhighlight-box');
+let unhighlightBox = document.getElementsByClassName('unhighlight-box');
 
 // these are the elements with the purple color, #b515c2
 let webBorder = document.querySelector('hr');
-let webDottedBorder = document.getElementByClassName('line');
+let webDottedBorder = document.getElementsByClassName('line');
 
 // these are the elements with the lightest color, #fac632
 let webH1 = document.querySelector('h1');
 
 
 
-getRandomColor(){
+function getRandomColor() {
     let characters = "0123456789ABCDEF";
     let color = "#";
 
@@ -84,11 +89,13 @@ function colorChangeLightest(color){
     webH1.style.color = color; 
 }
 
-function colorChanger{
+function colorChanger(){
     colorChangeWhite(getRandomColor());
     colorChangeDarkest(getRandomColor());
     colorChangeMidtone(getRandomColor());
     colorChangePurple(getRandomColor());
     colorChangeLightest(getRandomColor());
 }
+
+
 

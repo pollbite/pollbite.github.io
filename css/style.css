@@ -288,6 +288,7 @@ a.link-button:hover {
   width: 60%;
   font-size: 30pt;
   text-align: left;
+  justify-content: center;
 }
 
 .commission-column{
