@@ -353,7 +353,7 @@ a.highlight-box:hover{
 #dino {
   width: 50px; 
   height: 50px; 
-  background-image: url(trex.png);
+  background-image: url("trex.png");
   background-size: 50px 50px;
   position: relative; 
   top: 150px; 
@@ -392,9 +392,13 @@ a.highlight-box:hover{
   top: 110px;
   left: 580px;
 
-  background-image: url("img/cactus.png");
+  background-image: url("cactus.png");
   background-size: 20px 40px;
 
+ 
+}
+
+.cactus-jump{
   animation: block 1s infinite linear;
 }
 
