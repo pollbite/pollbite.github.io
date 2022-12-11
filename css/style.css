@@ -102,20 +102,20 @@ i {
   margin: -5px 10px 0px 0px;
 }
 
-.icon-link{
-  all:none;
+.icon-link {
+  all: none;
 }
 
-.icon-link:hover #house{
-  color:#23006e;
+.icon-link:hover #house {
+  color: #23006e;
 }
 
-.icon-link:hover #insta{
-  color:#23006e;
+.icon-link:hover #insta {
+  color: #23006e;
 }
 
-.icon-link:hover #twitter{
-  color:#23006e;
+.icon-link:hover #twitter {
+  color: #23006e;
 }
 
 hr {
@@ -162,7 +162,7 @@ a:hover {
 }
 
 a {
-  all:unset;
+  all: unset;
 }
 
 a.header-link {
@@ -177,11 +177,11 @@ a.header-link:hover {
 }
 
 a.highlight-about-box:hover {
-  text-decoration:none;
+  text-decoration: none;
 }
 
-a.highlight-box:hover{
-  text-decoration:none;
+a.highlight-box:hover {
+  text-decoration: none;
 }
 
 /* formatting for the header tabs */
@@ -205,7 +205,7 @@ a.highlight-box:hover{
 }
 /* the appearance of the general header tab when selected */
 .highlight-box {
-  display:block;
+  display: block;
   background-color: white;
   border-radius: 15px;
   border-bottom-left-radius: 0px;
@@ -216,7 +216,7 @@ a.highlight-box:hover{
 }
 /* the appearance of the about header tab when not selected */
 .unhighlight-about-box {
-  display:block;
+  display: block;
   background-color: #1f68b8;
   color: #fac632;
   border: #23006e solid 2px;
@@ -247,9 +247,10 @@ a.highlight-box:hover{
 }
 
 .highlight-box-header:hover {
-  color: #23006e
+  color: #23006e;
 }
 
+/*below is all gallery styling used across the board, will further expand on this with hover*/
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -258,13 +259,13 @@ a.highlight-box:hover{
 
 .gallery-item {
   height: 300px;
-  cursor:pointer;
+  cursor: pointer;
   position: relative;
   flex-grow: 1;
   flex: 1 1 auto;
 }
 
-.gallery-item img{
+.gallery-item img {
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -277,15 +278,16 @@ a.highlight-box:hover{
   flex-grow: 999;
 }
 
+/* below is all the specific styling for the commissions tab*/
 .comm-flex {
   display: flex;
-  flex-wrap:nowrap;
+  flex-wrap: nowrap;
   gap: 10px;
 }
 
-.commission-column{
+.commission-column {
   height: 300px;
-  cursor:pointer;
+  cursor: pointer;
   position: relative;
   flex-grow: 1;
   flex: 1 1 auto;
@@ -293,10 +295,10 @@ a.highlight-box:hover{
 
 .comm-image {
   width: 90%;
-  height: 90%x; 
-  object-fit:cover;
-  border-radius: 5px; 
-  height: 100%; 
+  height: 90%x;
+  object-fit: cover;
+  border-radius: 5px;
+  height: 100%;
   margin: 5px;
 }
 
@@ -305,14 +307,13 @@ a.highlight-box:hover{
   text-align: center;
 }
 
-.comm-list{
+.comm-list {
   font-size: 150%;
   list-style-type: none;
-  margin: 0; 
+  margin: 0;
   padding: 0;
   text-align: center;
 }
-
 
 .comm-line {
   flex-grow: 1;
@@ -323,9 +324,10 @@ a.highlight-box:hover{
   border-color: #b515c2;
 }
 
+/* below is the styling and some of the animation for the mona curser*/
 .cursor-image {
-  position: absolute; 
-  width: 70px; 
+  position: absolute;
+  width: 70px;
   height: 70px;
 }
 
@@ -343,22 +345,35 @@ a.highlight-box:hover{
   }
 }
 
-.game{
+/* below is the styling for the web game*/
+#web-game-header {
+  text-align: center;
+  margin: -10px 0px -20px 0px;
+}
+
+#web-additional-header {
+  text-align: center;
+  font-size: 30pt;
+  margin: -10px 0px 30px 0px;
+}
+
+/* majority of the web games functionality (ie. animations). will expand in the future to make sizing responsive*/
+.game {
   width: 605px;
-  height: 205px; 
-  border: 5px solid #1f68b8; 
-  margin: auto; 
+  height: 205px;
+  border: 5px solid #1f68b8;
+  margin: auto;
   border-radius: 10px;
   background-image: url("forest.png");
 }
 
 #butterfree {
-  width: 50px; 
-  height: 50px; 
+  width: 50px;
+  height: 50px;
   background-image: url("butterfree.gif");
   background-size: 50px 50px;
-  position: relative; 
-  top: 150px; 
+  position: relative;
+  top: 150px;
 }
 
 .jump {
@@ -383,7 +398,7 @@ a.highlight-box:hover{
   }
 
   100% {
-    top: 150px; 
+    top: 150px;
   }
 }
 
@@ -396,11 +411,9 @@ a.highlight-box:hover{
 
   background-image: url("tree.png");
   background-size: 20px 40px;
-
- 
 }
 
-.tree-jump{
+.tree-jump {
   animation: block 1s infinite linear;
 }
 
